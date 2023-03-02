@@ -1,0 +1,3 @@
+(Comment) @comment
+(Name) @property
+

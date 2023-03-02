@@ -1,0 +1,46 @@
+=====
+Empty root with empty white space in front
+=====
+
+<Hello/>
+
+---
+
+(source_file
+  (prolog)
+  (element
+    (EmptyElemTag
+      (Name))))
+=====
+Empty root no white space
+=====
+<Hello/>
+---
+
+(source_file
+  (element
+    (EmptyElemTag
+      (Name))))
+=====
+Prolog with empty root
+=====
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule/>
+
+---
+(source_file
+  (prolog
+    (XMLDecl
+      (VersionInfo
+        (VersionNum))
+      (EncodingDecl
+        (EncName)))
+    (doctypedecl
+      (Name)
+      (ExternalID
+        (PubidLiteral)
+        (SystemLiteral))))
+  (element
+    (EmptyElemTag
+      (Name))))

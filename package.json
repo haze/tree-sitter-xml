@@ -13,5 +13,14 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.13.16"
-  }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.xml",
+      "file-types": [
+        "xml",
+        "plist"
+      ]
+    }
+  ]
 }
